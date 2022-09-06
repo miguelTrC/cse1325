@@ -1,30 +1,34 @@
-//import java.time.Clock; 
 
-public class Clock{ 
-    public void clock(){ 
-    
-        int seconds; 
-        int minutes; 
+public class Clock{     
         int hours; 
+        int minutes; 
+        int seconds; 
         
-        Clock(int pSeconds){
+        public String toString(){ 
+            String myString = hours + ":" + minutes + ":" + seconds;
+            return myString;
+                              }
         
-                           } 
-        Clock(int pMinutes){ 
-               
-                           }
-        Clock(int pHours){
+        Clock(int hours, int minutes, int seconds){
+            this.hours = hours;
+            this.minutes = minutes; 
+            this.seconds = seconds; 
             
-                         }  
+         System.out.println("Hours? " + hours);
+         System.out.println("Minutes? " + minutes);
+         System.out.println("Seconds? " + seconds);
+               } 
                             
     
     
     
-                     } 
+                  
                      
      public static void main(String []args){ 
-         clock(); 
-         System.out.println("Testing" + hours);          
+         Clock time = new Clock(10,20,30);
+
+         
+         System.out.println(time.toString());          
           
           
                                             }    
