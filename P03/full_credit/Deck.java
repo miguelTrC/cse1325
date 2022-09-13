@@ -2,12 +2,13 @@ import java.util.Stack;
 import java.util.Collections;
 public class Deck{
 	public void deck(){
-	
+		
+		
 	
 		Stack<String> cardLetter = new Stack<String>();
 			
 		int count = 0; 
-		while(count < MAX){
+		while(count < 10){
 			cardLetter.add(count + "A");
 			cardLetter.add(count + "T");
 			cardLetter.add(count + "U");
