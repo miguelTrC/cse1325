@@ -1,14 +1,5 @@
-// Write enum with U T A. 
-
-
-
-
-public class Suit{
-	enum UTA{
+	
+public enum Suit{
 	U, T, A;
 			}	
-	
-	
-	
-	
-	}
+		
