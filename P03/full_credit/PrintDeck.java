@@ -1,15 +1,22 @@
-/* 
-Main() goes in here 
+public class PrintDeck{
+	public static void main(String[] args){
+		
+		Deck deck = new Deck();
 
-shiffle the 'Deck' and print out each 'Card' 
+		
+		
+		
+		
+		
+		}
+}
 
-Can't access Deck.deck bc its encapsulated, use Deck's method instead. 
-
-Beggining: 
-See what encapsulated means
 
 
 
 
-NEED A WORKING XML FILE 
-*/
+
+
+
+
+
