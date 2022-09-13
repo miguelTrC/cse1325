@@ -13,6 +13,7 @@ public class Deck{
 				cardLetter.add(count + "U");
 				count++;
 			}
+			Collections.shuffle(cardLetter);
 		 		return cardLetter + " "; 
 	
 								 }
