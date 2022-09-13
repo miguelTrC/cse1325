@@ -1,16 +1,12 @@
-/* 
-Write a class that encapsulates a Suit and a Rank 
-The constructor assigns its parameters to the corresponding fields. 
 
-Card(rank : Rank, suit, Suit) 
-toString() : string       <--- returns rank field first then suit (no space 
-example: 3U or 0T)
-
-
-
-
-*/ 
-private Class Card{ 
-	private void card{
-		//start typinggg
-	}}
+public class Card{ 
+	
+	
+	Rank s1 = new Rank(); 
+	UTA letter = UTA.A; 
+	
+	
+	 public String toString(){ 
+		return s1.rank + letter; 
+	}
+	}
