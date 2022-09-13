@@ -3,7 +3,7 @@
 
 
 
-public Class Suit{
+public class Suit{
 	enum UTA{
 	U, T, A;
 			}	
