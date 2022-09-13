@@ -1,3 +1,20 @@
+import java.util.Stack 
+import java.util.Collections
+public class Deck{
+	Stack<String> cardLetter = new Stack<String>();
+	cardLetter.add("A"); 
+	cardLetter.add("T");
+	cardLetter.add("U");
+	
+	
+	
+	
+	
+	
+}
+
+
+
 /* 
 deck field is a java.util.Stack 
 Similiar to ArrayList, includes a 
