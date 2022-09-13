@@ -1,8 +1,16 @@
-/*
-Write a class that encapsulate an int between 0 and 9 
-Add a public staticfinal ints MIN (0) and MAX(9) to declare the range. 
-In the constructor, initialize the 'rank' field to the parameters 
-Rank(rank : int)
-toString()          <-- returns the string representation of 'rank' field
-
-*/
+public class Rank{ 
+	
+	int rank; 
+	final int MIN = 0;
+	final int MAX = 9; 	
+	
+	Rank(int rank){
+	this.rank = rank; 
+	}
+	
+	public String toString(){ 
+		return rank;
+	}
+	
+	
+}
