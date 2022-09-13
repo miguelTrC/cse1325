@@ -12,5 +12,5 @@ example: 3U or 0T)
 */ 
 private Class Card{ 
 	private void card{
-		//start typing
+		//start typinggg
 	}}
