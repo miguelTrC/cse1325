@@ -3,9 +3,15 @@ public class ElectricVehicle extends Vehicle{
 	double whPerMile; 
 	double kwhInBaterry; 
 	
-	ElectricVehicle(int year, String brand, String model, double whPerMile, 
-	double kwhInBaterry){
-	//still missing bodyStyle enum 
+	ElectricVehicle(int year, String brand, String model, BodyStyle bodyStyle, 
+	double whPerMile, double kwhInBaterry){
+	
+	this.year = year; 
+	this.brand = brand; 
+	this.model = model; 
+	this.bodyStyle = bodyStyle; 
+	this.whPerMile = whPerMile; 
+	this.kwhInBatterry = kwhInBatterry;
 	
 	
 	
