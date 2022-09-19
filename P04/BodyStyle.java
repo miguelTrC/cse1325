@@ -1,3 +1,3 @@
 public enum BodyStyle{
-	Sedan, Hatchback, Minivan, Truck, Crossover, SUV
+	Sedan, Hatchback, Minivan, Truck, Crossover, SUV;
 }
