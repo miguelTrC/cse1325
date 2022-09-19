@@ -25,14 +25,22 @@ public class ElectricVehicle extends Vehicle{
 		
 	public double fuelConsumed(double miles){
 		miles = miles * (whPerMile / 1000);
+		//need to add error msg
+		return miles; 
 		
-		
+	}
+	//Unsure if I should re-use miles as a return, maybe doesn't matter? 
+	//printf(dolllarsToTravel(valueHere))
+	public double dollarsToTravel(double miles){
+		fuelConsumed(miles) * (centsPerKwhOfElectricity / 100);
+		return miles; 
 	}
 
 }
 
 
 /*
+
 range() 
 	kwhInBattery / (whPerMile / 1000)
 	returns a double 
@@ -44,6 +52,9 @@ fuelConsumed(double miles)
 dollarsToTravel(double miles) 
 	fuelConsumed(miles) * (centsPerKwhOfElectricity / 100)
 
+
+I think that I need to make these Methods (functions), and then run them in 
+the Vehicle file?
 
 
 */
