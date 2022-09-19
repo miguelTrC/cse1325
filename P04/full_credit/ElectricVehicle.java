@@ -13,12 +13,21 @@ public class ElectricVehicle extends Vehicle{
 	this.whPerMile = whPerMile; 
 	this.kwhInBatterry = kwhInBatterry;
 	
+	}
 	
 	
+	// not 100% if this is the correct method, or if they should be double
 	
+	public double range(){
+		double range = kwhInBaterry / (whPerMile / 1000); 
+		return range; 
 	}
 		
-
+	public double fuelConsumed(double miles){
+		miles = miles * (whPerMile / 1000);
+		
+		
+	}
 
 }
 
