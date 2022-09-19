@@ -8,12 +8,12 @@ private class Vehicle{
 	int year; 
 	String brand; 
 	String model; 
-	BodyStyle body = BodyStyle; 
-	public Vehicle(int year, String brand, String model){
-	// BodyStyle? 
+	BodyStyle bodyStyle = BodyStyle.SUV; 
+	public Vehicle(int year, String brand, String model, BodyStyle bodyStyle){
 		this.year = year; 
 		this.brand = brand; 
 		this.model = model; 
+		this.bodyStyle = bodyStyle;
 	}
 
 }
