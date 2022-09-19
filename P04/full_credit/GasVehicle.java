@@ -2,14 +2,14 @@ public class GasVehicle extends Vehicle{
 	static double dollarsPerGallonOfGas; 
 	double milesPerGallon; 
 	double gallonsInTank; 
-	// BodyStyle??? 
 	
-	GasVehicle(int year, String brand, String model, double milesPerGallon, 
-	double gallonsInTank){
-	// BodyStyle???
+	GasVehicle(int year, String brand, String model, BodyStyle bodyStyle, 
+	double milesPerGallon, double gallonsInTank){
+
 	this.year = year; 
 	this.brand = brand; 
 	this.model = model; 
+	this.bodyStyle = bodyStyle;
 	this.milesPerGallon = milesPerGallon; 
 	this.gallonsInTank = gallonsInTank; 
 	
