@@ -12,6 +12,10 @@ public class TravelCost{
 		Scanner in = new Scanner(System.in);
 		double cents = input.nextDouble();
 		
+		System.out.println("How many miles is your trip? "); 
+		Scanner trip = new Scanner(System.in);
+		double miles = input.nextDouble();
+		
 		
 		ArrayList vehicles = new ArrayList(); 
 		
@@ -28,7 +32,8 @@ public class TravelCost{
         vehicles.add(new GasVehicle(     2022, "Chrysler", "Pacifica",        BodyStyle.Minivan,    24,  19  ));
         vehicles.add(new GasVehicle(     2022, "Chrysler", "Pacifica Hybrid", BodyStyle.Minivan,    30,  16.5));
         
-        System.out.println(vehicles.toString()); 
+        
+        System.out.println(vehicles); 
        // System.out.println("TEST");
 		
 	}
