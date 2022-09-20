@@ -20,7 +20,7 @@ public class ElectricVehicle extends Vehicle{
 	
 	public double range(){
 		double range = kwhInBattery / (whPerMile / 1000); 
-		return range; 
+		return (range); 
 	}
 		
 	public double fuelConsumed(double miles){
@@ -29,14 +29,14 @@ public class ElectricVehicle extends Vehicle{
 			System.out.println("Error: More battery consumed than available ");
 			fuelConsumed = 0.0; 
 		}
-		return fuelConsumed; 
+		return (fuelConsumed); 
 		
 	}
 	//Unsure if I should re-use miles as a return, maybe doesn't matter? 
 	//printf(dolllarsToTravel(valueHere))
 	public double dollarsToTravel(double miles){
 		double dollarsToTravel = fuelConsumed(miles) * (centsPerKwhOfElectricity / 100);
-		return dollarsToTravel; 
+		return (dollarsToTravel); 
 	}
 
 }
