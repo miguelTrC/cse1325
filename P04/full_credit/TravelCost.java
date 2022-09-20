@@ -1,18 +1,18 @@
-/* 
-	Will insert the table of car info here, into an arrayList, 
-	
-	Will read in info into the classes/ variables
-	
-	
-	NOTE* looks at how the enums are declared in the info sheet? 
-	
-
-*/
+import java.util.Scanner;
 import java.util.ArrayList; 
 
 public class TravelCost{
 	public static void main(String[] args){
-		//ArrayList<String> vehicles = new ArrayList<>();
+	
+		System.out.println("What is the price of Gas per gallon (dollars)? ");
+		Scanner input = new Scanner(System.in);
+		double dollars = input.nextDouble();
+		
+		System.out.println("What is the price per kwh of electricity (cents)? ");
+		Scanner in = new Scanner(System.in);
+		double cents = input.nextDouble();
+		
+		
 		ArrayList vehicles = new ArrayList(); 
 		
 		vehicles.add(new ElectricVehicle(2022, "Telsa",    "Model S Plaid",   BodyStyle.Sedan,     297, 100  ));
@@ -28,7 +28,8 @@ public class TravelCost{
         vehicles.add(new GasVehicle(     2022, "Chrysler", "Pacifica",        BodyStyle.Minivan,    24,  19  ));
         vehicles.add(new GasVehicle(     2022, "Chrysler", "Pacifica Hybrid", BodyStyle.Minivan,    30,  16.5));
         
-        System.out.println(vehicles); 
+        System.out.println(vehicles.toString()); 
+       // System.out.println("TEST");
 		
 	}
 
