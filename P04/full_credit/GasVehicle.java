@@ -5,11 +5,12 @@ public class GasVehicle extends Vehicle{
 	
 	GasVehicle(int year, String brand, String model, BodyStyle bodyStyle, 
 	double milesPerGallon, double gallonsInTank){
+	super(year, brand, model, bodyStyle);
 
-	this.year = year; 
-	this.brand = brand; 
-	this.model = model; 
-	this.bodyStyle = bodyStyle;
+	//this.year = year; 
+	//this.brand = brand; 
+	//this.model = model; 
+	//this.bodyStyle = bodyStyle;
 	this.milesPerGallon = milesPerGallon; 
 	this.gallonsInTank = gallonsInTank; 
 	
