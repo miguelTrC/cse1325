@@ -4,13 +4,13 @@
 	int, 	string	, string,	BodyStyle(class)
 */
 
-private class Vehicle{ 
-	int year; 
-	String brand; 
-	String model; 
-	BodyStyle bodyStyle = BodyStyle.SUV; 
+public class Vehicle{ 
+	private int year; 
+	private String brand; 
+	private String model; 
+	private BodyStyle bodyStyle = BodyStyle.SUV; 
 	
-	public Vehicle(int year, String brand, String model, BodyStyle bodyStyle){
+ 	public Vehicle(int year, String brand, String model, BodyStyle bodyStyle){
 		this.year = year; 
 		this.brand = brand; 
 		this.model = model; 
