@@ -8,9 +8,13 @@
 	
 
 */
+import java.util.ArrayList; 
+
 public class TravelCost{
 	public static void main(String[] args){
-		ArrayList<String> vehicles = new ArrayList<>(); 
+		//ArrayList<String> vehicles = new ArrayList<>();
+		ArrayList vehicles = new ArrayList(); 
+		
 		vehicles.add(new ElectricVehicle(2022, "Telsa",    "Model S Plaid",   BodyStyle.Sedan,     297, 100  ));
         vehicles.add(new ElectricVehicle(2022, "Telsa",    "Model 3 LR",      BodyStyle.Sedan,     242,  82  ));
         vehicles.add(new ElectricVehicle(2022, "GM",       "Bolt",            BodyStyle.Hatchback, 286,  66  ));
