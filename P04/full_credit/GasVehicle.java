@@ -17,22 +17,24 @@ public class GasVehicle extends Vehicle{
 	
 	public double range(){
 		double range = gallonsInTank * milesPerGallon; 
-		return range;
+		return (range);
 	}
 	
 	public double fuelConsumed(double miles){
 		double fuelConsumed = miles / milesPerGallon;
 		if (fuelConsumed > gallonsInTank){
-			System.out.printl("Error: More fuel consumed than in tank ")
+			System.out.printl("Error: More fuel consumed than in tank ");
 			fuelConsumed = 0.0; 
-			return fueldConsumed;
+			return (fuelConsumed);
+			}
+		
+		return (fuelConsumed); 
 		}
-		return fuelConsumed; 
-	}
+	
 	
 	public double dollarsToTravel(double miles){
 		double dollarsToTravel = fuelConsumed(miles) * dollarsPerGallonOfGas;
-		return dollarsToTravel;
+		return (dollarsToTravel);
 	}
 	
 	
