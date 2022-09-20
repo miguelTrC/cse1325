@@ -9,6 +9,7 @@ private class Vehicle{
 	String brand; 
 	String model; 
 	BodyStyle bodyStyle = BodyStyle.SUV; 
+	
 	public Vehicle(int year, String brand, String model, BodyStyle bodyStyle){
 		this.year = year; 
 		this.brand = brand; 
