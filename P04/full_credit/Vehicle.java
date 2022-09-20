@@ -17,9 +17,9 @@ public class Vehicle{
 		this.bodyStyle = bodyStyle;
 	}
 	
-	/* public String toString() {
-		
-		
-		return xx + "xx";
-	} */ 
+	 public String toString() {
+		return (" " + year + " " + brand + " " + model + 
+				" " + bodyStyle );
+	
+	} 
 }
