@@ -5,11 +5,11 @@ public class ElectricVehicle extends Vehicle{
 	
 	ElectricVehicle(int year, String brand, String model, BodyStyle bodyStyle, 
 	double whPerMile, double kwhInBattery){
-	
-	this.year = year; 
-	this.brand = brand; 
-	this.model = model; 
-	this.bodyStyle = bodyStyle; 
+	super(year, brand, model, bodyStyle);
+	//this.year = year; 
+	//this.brand = brand; 
+	//this.model = model; 
+	//this.bodyStyle = bodyStyle; 
 	this.whPerMile = whPerMile; 
 	this.kwhInBattery = kwhInBattery;
 	
