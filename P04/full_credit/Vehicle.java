@@ -16,5 +16,10 @@ public class Vehicle{
 		this.model = model; 
 		this.bodyStyle = bodyStyle;
 	}
-
+	
+	/* public String toString() {
+		
+		
+		return xx + "xx";
+	} */ 
 }
