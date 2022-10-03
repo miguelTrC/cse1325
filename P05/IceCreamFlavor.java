@@ -1,17 +1,8 @@
-/*
-6943 restroom 
+public class IceCreamFlavor extends Item{
 
-No fields but a constructor? is this a sub? 
-
-
-Maybe this is a sub class of item, and a constructor just initializes 
-super (x,y)
-
-*/ 
-
-public class IceCreamFlavor extends Item.java { 
-	
+	 IceCreamFlavor(String name, String description, int cost, int price){
+		super(name, description, cost, price);
+	} 
 	
 		
-		
-	}
+}
