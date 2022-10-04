@@ -23,4 +23,9 @@ public class Scoop{
 	public Scoop(IceCreamFlavor flavor){
 		this.flavor = flavor; 
 	}
+/*	
+	public addMixIn(){
+		mixins.add
+	}
+	*/
 }
