@@ -17,11 +17,12 @@
 */
 
 public class Scoop{
-	private IceCreamFlavor flavor = new IceCreamFlavor(); 
-	private ArrayList mixins = new ArrayList(); 
+	private IceCreamFlavor flavor; 
+	private ArrayList<MixIn> mixins; 
 	
 	public Scoop(IceCreamFlavor flavor){
 		this.flavor = flavor; 
+		this.mixins = new ArrayList<>();
 	}
 /*	
 	public addMixIn(){
