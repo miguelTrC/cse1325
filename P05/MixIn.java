@@ -1,6 +1,6 @@
 public class MixIn{
-	private MixInFlavor flavor = new MixInFlavor();
-	private MixInAmount amount = MixInAmount.NORMAL;
+	private MixInFlavor flavor;
+	private MixInAmount amount;
 	
 	MixIn(MixInFlavor flavor, MixInAmount amount){
 		this.flavor = flavor; 
@@ -8,6 +8,7 @@ public class MixIn{
 	}
 	
 	public String toString(){
-		return(flavor + " (" + amount + " )");
+		return(flavor.toString() + (!amount.equals(MixInAmount.Normal
+			? " (" + amount + ")" : "");
 	}
 }
