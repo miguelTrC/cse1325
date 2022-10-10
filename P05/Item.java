@@ -11,6 +11,13 @@ public class Item{
 		this.cost = cost; 
 		this.price = price; 
 		}
+		
+		
+	public String name() {return name}; 
+	public String description() {return description}; 
+	public int cost() {return cost}; 
+	public int price() {return price}; 
+	
 	
 	public String toString(){
 		return (name + " "); 
