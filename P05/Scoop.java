@@ -24,9 +24,16 @@ public class Scoop{
 		this.flavor = flavor; 
 		this.mixins = new ArrayList<>();
 	}
-/*	
-	public addMixIn(){
-		mixins.add
+/*	//MixIn mixins?
+	public void addMixIn(MixIn mixin){
+		mixins.add(mixin);
 	}
 	*/
+	
+	// ToString method from Professor Rice
+	public String toString(){
+		StringBuilder result = new StringBuilder(flavor.toString());
+		
+	}
+	
 }
