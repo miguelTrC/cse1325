@@ -33,6 +33,14 @@ public class Scoop{
 	// ToString method from Professor Rice
 	public String toString(){
 		StringBuilder result = new StringBuilder(flavor.toString());
+		if (mixins.size() > 0) {
+			String seperator = " with "; 
+			for (MixIn m : mixins){
+				result.append(seperator + m.toString());
+				sepator = ", ";
+				}
+		}
+		return result.toString();
 		
 	}
 	
