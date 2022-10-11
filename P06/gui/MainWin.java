@@ -31,7 +31,7 @@ public class MainWin extends JFrame{
 		
 		
 		JMenuBar menubar = new JMenuBar();
-		frame.setJmenuBar(menubar);
+		frame.setJMenuBar(menubar);
         
         JMenu file = new JMenu("File");
         menubar.add(file);
