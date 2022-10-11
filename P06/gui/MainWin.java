@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.swing.*;
 import javax.imageio.ImageIO;
 
-public class MainWin extends JFrame {
+public class MainWin{
 
 
 
@@ -16,7 +16,13 @@ public class MainWin extends JFrame {
 		
 		
 		JPanel panel = new JPanel(); 
-		panel.setBorder(BorderFactory.createEmptyBorder());
+		panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
+		panel.setLayout(new GridLayout(0,1));
+		
+		frame.add(panel, BorderLayout.CENTER);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Mavs Ice Cream Emporium")
+		
 		
 
 		/*
