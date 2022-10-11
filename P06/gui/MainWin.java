@@ -31,11 +31,19 @@ public class MainWin extends JFrame{
 		
 		
 		JMenuBar menubar = new JMenuBar();
+		frame.setJmenuBar(menubar);
         
         JMenu file = new JMenu("File");
+        menubar.add(file);
+        
         JMenu view = new JMenu("View");
+        menubar.add(view);
+        
         JMenu create = new JMenu("Create");
+        menubar.add(create);
+        
         JMenu help = new JMenu("Help");
+        menubar.add(help);
 		
 		}
 		
