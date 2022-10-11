@@ -9,6 +9,6 @@ public class MixIn{
 	
 	public String toString(){
 		return(flavor.toString() + (!amount.equals(MixInAmount.Normal
-			? " (" + amount + ")" : "");
+			? " (" + amount + ")" : "")));
 	}
 }
