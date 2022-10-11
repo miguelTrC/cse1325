@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.swing.*;
 import javax.imageio.ImageIO;
 
-public class MainWin{
+public class MainWin extends JFrame{
 
 
 
