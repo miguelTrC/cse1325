@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Scoop{
 	private IceCreamFlavor flavor; 
 	private ArrayList<MixIn> mixins; 
