@@ -1,10 +1,10 @@
 import java.util.ArrayList;
+// import java.util.List ? 
 
 public class Emporium {
-// ArrayLIst of mixInFlavor(s) iceCreamFlavor(s) scoop(s)
-// this.mixins = new ArrayList<>(); 
+
 	private ArrayList<MixInFlavor> mixInFlavors = new ArrayList<>(); 
-	private ArrayList<IceCreamFlavor> iceCreamFlavor = new ArrayList<>(); 
+	private ArrayList<IceCreamFlavor> iceCreamFlavors = new ArrayList<>(); 
 	private ArrayList<Scoop> scoops = new ArrayList<>(); 
 	
 	public void addMixInFlavor(MixInFlavor flavor){
@@ -20,14 +20,19 @@ public class Emporium {
 	}
 	
 	
+//Listing elements in ArrayList 
+	public void mixInFlavors(){
+		//list elements of arrayList
+		Object[] objects = mixInFlavors.toArray();
+	}
+	
+	public void iceCreamFlavors(){
+		Object[] objects = iceCreamFlavors.toArray();
+	}
+	
+	public void scoops(){
+		Object[] objects = scoops.toArray(); 
+	}
 }
 
-/*
-
-Gives list elements of arrayList?
-
-Objects[]
-ArrayListName.toArray()
-
-*/
 
