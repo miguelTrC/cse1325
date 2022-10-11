@@ -1,3 +1,3 @@
 public enum MixInAmount{
-	LIGHT, NORMAL, EXTRA, DRENCHED; 
+	Light, Normal, Extra, Drenched; 
 }
