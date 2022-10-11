@@ -26,7 +26,7 @@ public class MainWin extends JFrame{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Mavs Ice Cream Emporium");
 		frame.pack();
-		frame.setVisibility(true);
+		frame.setVisible(true);
 		
 		}
 		
