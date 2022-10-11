@@ -28,6 +28,15 @@ public class MainWin extends JFrame{
 		frame.pack();
 		frame.setVisible(true);
 		
+		
+		
+		JMenuBar menubar = new JMenuBar();
+        
+        JMenu file = new JMenu("File");
+        JMenu view = new JMenu("View");
+        JMenu create = new JMenu("Create");
+        JMenu help = new JMenu("Help");
+		
 		}
 		
 
