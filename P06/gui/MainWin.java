@@ -1,6 +1,3 @@
-/* 
-Baseline code provided by Professor Rice
-*/ 
 
 import java.awt.*;
 import java.awt.event.*;
@@ -10,12 +7,21 @@ import java.io.IOException;
 import javax.swing.*;
 import javax.imageio.ImageIO;
 
-public class MainWin extends JFrame {// implements ActionListener {
-    public MainWin(String title) {
-        super(title);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 200);
-        
+public class MainWin extends JFrame {
+
+
+
+		JFrame frame = new JFrame();
+		
+		
+		
+		JPanel panel = new JPanel(); 
+		panel.setBorder(BorderFactory.createEmptyBorder());
+		
+
+		/*
+		
+		// BaseLine Code given by prof rice
         // /////// ////////////////////////////////////////////////////////////////
         // M E N U
         // Add a menu bar to the PAGE_START area of the Border Layout
@@ -245,5 +251,7 @@ public class MainWin extends JFrame {// implements ActionListener {
     private JButton button2;                // Button to select 2 sticks
     private JButton button3;                // Button to select 3 sticks
     private JToggleButton computerPlayer;   // Button to enable robot
+    
+    */
 
 }
