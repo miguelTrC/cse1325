@@ -11,6 +11,9 @@ public class MainWin{
 
 
 
+
+		MainWin(){
+
 		JFrame frame = new JFrame();
 		
 		
@@ -21,13 +24,18 @@ public class MainWin{
 		
 		frame.add(panel, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setTitle("Mavs Ice Cream Emporium")
+		frame.setTitle("Mavs Ice Cream Emporium");
+		frame.pack();
+		frame.setVisibility(true);
 		
+		}
 		
 
 		/*
 		
-		// BaseLine Code given by prof rice
+		// BaseLine Code given by prof rice, Using for additional refrence
+		
+		
         // /////// ////////////////////////////////////////////////////////////////
         // M E N U
         // Add a menu bar to the PAGE_START area of the Border Layout
