@@ -15,13 +15,14 @@ public class Scoop{
 	
 	
 	// ToString method from Professor Rice
+	@Override 
 	public String toString(){
 		StringBuilder result = new StringBuilder(flavor.toString());
 		if (mixins.size() > 0) {
-			String seperator = " with "; 
+			String separator = " with "; 
 			for (MixIn m : mixins){
-				result.append(seperator + m.toString());
-				sepator = ", ";
+				result.append(separator + m.toString());
+				separator = ", ";
 				}
 		}
 		return result.toString();
