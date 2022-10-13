@@ -1,3 +1,5 @@
+package emporium; 
+
 import java.util.ArrayList;
 
 import product.MixIn;
