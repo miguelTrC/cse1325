@@ -1,5 +1,11 @@
 import java.util.ArrayList;
-// import java.util.List ? 
+
+import product.MixIn;
+import product.MixInAmount;
+import product.MixInFlavor;
+import product.IceCreamFlavor;
+import product.Item;
+import product.Scoop;
 
 public class Emporium {
 
@@ -21,17 +27,17 @@ public class Emporium {
 	
 	
 //Listing elements in ArrayList 
-	public void mixInFlavors(){
+	public Object[] mixInFlavors(){
 		//list elements of arrayList
-		Object[] objects = mixInFlavors.toArray();
+		return this.mixInFlavors.toArray();
 	}
 	
-	public void iceCreamFlavors(){
-		Object[] objects = iceCreamFlavors.toArray();
+	public Object[] iceCreamFlavors(){
+		 return this.iceCreamFlavors.toArray();
 	}
 	
-	public void scoops(){
-		Object[] objects = scoops.toArray(); 
+	public Object[] scoops(){
+		 return this.scoops.toArray(); 
 	}
 }
 
