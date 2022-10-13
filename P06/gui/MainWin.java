@@ -1,10 +1,34 @@
+package gui; 
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
+import emporium.Emporium;
+import product.Item;
+import product.IceCreamFlavor;
+import product.MixInFlavor;
+import product.MixInAmount;
+import product.MixIn;
+import product.Scoop;
+
+import java.awt.BorderLayout;
+import java.awt.Font;
+
+
+import java.awt.image.BufferedImage;
+
 import java.io.File;
 import java.io.IOException;
-import javax.swing.*;
+
+import javax.swing.JFrame;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+
+import javax.swing.JLabel;
+import javax.swing.JButton;
+
 import javax.imageio.ImageIO;
 
 public class MainWin extends JFrame{
