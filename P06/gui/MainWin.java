@@ -41,7 +41,7 @@ public class MainWin extends JFrame{
 
 
 
-		MainWin(){
+		public MainWin(){
 
 		JFrame frame = new JFrame();
 		
