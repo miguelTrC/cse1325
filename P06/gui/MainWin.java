@@ -31,6 +31,8 @@ import javax.swing.JButton;
 
 import javax.imageio.ImageIO;
 
+import emporium.Emporium;
+
 public class MainWin extends JFrame{
 
 
