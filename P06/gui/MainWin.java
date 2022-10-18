@@ -34,6 +34,9 @@ import javax.imageio.ImageIO;
 import javax.swing.Box; 
 import javax.swing.BoxLayout;
 
+import javax.swing.BorderFactory;
+import javax.swing.GridLayout; 
+
 import emporium.Emporium;
 
 public class MainWin extends JFrame{
