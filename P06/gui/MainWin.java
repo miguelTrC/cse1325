@@ -10,6 +10,7 @@ import product.Scoop;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import javax.awt.GridLayout; //  
 
 
 import java.awt.image.BufferedImage;
@@ -34,8 +35,9 @@ import javax.imageio.ImageIO;
 import javax.swing.Box; 
 import javax.swing.BoxLayout;
 
-import javax.swing.BorderFactory;
-import javax.swing.GridLayout; 
+import javax.swing.BorderFactory; //
+
+
 
 import emporium.Emporium;
 
