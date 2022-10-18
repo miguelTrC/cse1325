@@ -10,7 +10,7 @@ import product.Scoop;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
-import javax.awt.GridLayout; //  
+import java.awt.GridLayout; //  
 
 
 import java.awt.image.BufferedImage;
