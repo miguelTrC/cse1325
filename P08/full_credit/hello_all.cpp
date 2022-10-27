@@ -1,22 +1,24 @@
 /*
-Take user input and print 'Hello "UserInput" '
+Take user input and print 'Hello "UserInput" x3 '
 */
 
 #include <iostream> 
 
 int main() { 
-
-	// prob a better way
-	char[20] name; 
+	
+	std::string name; 
+	
+	for(int count = 0; count > 3; count++) { 
+		std::cout << "What is your name? " << std::endl; 
+		std::cin >> name; 
+		
+		std::cout << "Hello " 
+				  << name << std::endl
+				  << std::endl; 
+			  }
+			   
 	
 	
-	std::cout << "What is your name? " << std::endl; 
-	
-	
-
-	//need notes from C, fscan? 
-	
-	std::cout << name << std::endl; 
 	
 	
 	return EXIT_SUCCESS;	
