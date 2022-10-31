@@ -18,17 +18,17 @@ will use as a refrence in future project
 
 int main(int argc, char *args[] ) {
 	
-	std::fstream file; 
+	fstream file; 
 	// opens the file for reading
-	std::file.open(args[1], ios::in);
+	std:file.open(args[1], ios::in);
 	
 	std::vector<std::string> text_Data;
 	std::string line; 
 	
 	
-	//if the file was able to open 
+/*	//if the file was able to open 
 	if(file.is_open()){
-	}
+	
 	// Gets a line from the text doc and copies it onto the vector
 		while(getline(file, line)){ 
 			
@@ -41,7 +41,7 @@ int main(int argc, char *args[] ) {
 	}
 	
 	
-	file.close; 
+	std::file.close; */
 	
 	return EXIT_SUCCESS;
 }
