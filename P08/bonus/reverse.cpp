@@ -1,10 +1,3 @@
-/*
-./a.out Hello 
-
-Prints [ olleH  ]
-
-*/
-
 #include <iostream> 
 //#include <string.h>
 #include <algorithm> // std::reverse
@@ -12,9 +5,14 @@ Prints [ olleH  ]
 
 int main(int argc, char *args[]) {
 	
-	std::vector<std::string> input;
+	//std::vector<std::string> input;
 	
-//	std::cout << input << std::endl; 
+	for (int count = 1; count < argc; count++){ 
+	
+		std::string input(args[count]);
+		std::reverse( input.begin(), input.end() );
+		std::cout << input << std::endl; 
+	}
 	
 	
 	
