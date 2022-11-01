@@ -27,7 +27,7 @@ int main(int argc, char *args[] ) {
 	std::string line; 
 	
 	
-/*	//if the file was able to open 
+	//if the file was able to open 
 	if(file.is_open()){
 	
 	// Gets a line from the text doc and copies it onto the vector
@@ -35,13 +35,17 @@ int main(int argc, char *args[] ) {
 			
 			text_Data.push_back(line);
 			//Insert algorithm to order the output
-			std::sort( text_Data.begin(), text_Data.end() );
+			// move out? std::sort( text_Data.begin(), text_Data.end() );
 			//print 	
-			std::cout << text_Data << std::endl;
-		}
+			//std::cout << text_Data << std::endl; 
+		} 
+		
 	}
 	
-	*/
+	std::sort( text_Data.begin(), text_Data.end() );
+	std::cout << text_Data[1] << std::endl; 
+	
+	
 	std:file.close(); 
 	
 	return EXIT_SUCCESS;
