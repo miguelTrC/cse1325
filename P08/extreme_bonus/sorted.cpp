@@ -15,12 +15,13 @@ will use as a refrence in future project
 #include <vector> 
 #include <algorithm>
 #include <fstream> //read txt file (file operator)
+#include <sstream> //stream string to copy contents to string 
 
 int main(int argc, char *args[] ) {
 	
-	fstream file; 
+	std::ifstream file; 
 	// opens the file for reading
-	std:file.open(args[1], ios::in);
+	file.open(args[1]);
 	
 	std::vector<std::string> text_Data;
 	std::string line; 
@@ -40,8 +41,8 @@ int main(int argc, char *args[] ) {
 		}
 	}
 	
-	
-	std::file.close; */
+	*/
+	std:file.close(); 
 	
 	return EXIT_SUCCESS;
 }
