@@ -1,10 +1,7 @@
 /*
+
 ./a.out textFile.txt 
 
-push the values in the text file onto a vector<string>, 
-
-after all values are in the vector, use the sort function from 
-algorithm, (name.begiin(), name.end() )
 
 Leaving comments since I am still learning file operations in c++, 
 will use as a refrence in future project
