@@ -33,6 +33,11 @@ int main(int argc, char *args[] ) {
 		} 
 	}
 	
+	for (int counter = 0; counter < text_Data.size(); counter++){
+		std::cout << text_Data[counter] << std::endl; 
+	}
+	std::cout << std::endl;
+	
 	std::sort( text_Data.begin(), text_Data.end() );
 	
 	for (int counter = 0; counter < text_Data.size(); counter++){
