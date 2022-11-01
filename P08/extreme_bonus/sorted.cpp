@@ -32,19 +32,15 @@ int main(int argc, char *args[] ) {
 	
 	// Gets a line from the text doc and copies it onto the vector
 		while(getline(file, line)){ 
-			
 			text_Data.push_back(line);
-			//Insert algorithm to order the output
-			// move out? std::sort( text_Data.begin(), text_Data.end() );
-			//print 	
-			//std::cout << text_Data << std::endl; 
 		} 
-		
 	}
 	
 	std::sort( text_Data.begin(), text_Data.end() );
-	std::cout << text_Data[1] << std::endl; 
 	
+	for (int counter = 0; counter < text_Data.size(); counter++){
+		std::cout << text_Data[counter] << std::endl; 
+	}
 	
 	std:file.close(); 
 	
