@@ -3,13 +3,24 @@ Creating a 3x3 matrix and with input, output, and addition operators
 named Data
 */
 
+//mxy parameters where x = row, y = colum, 3x3 array
+
 #include <iostream> 
 #include <vector>
 
 class Matrix3{ 
 	
 	public: 
-		Matrix3(int)
+		Matrix3(int m00, int m01, int m02,
+				int m10, int m11, int m12,
+				int m20, int m21, int m22): 
+				
+				{
+					// body 
+					std::cout << "working" << std::endl; 
+				}
+				
+				
 		
 		
 		
@@ -17,7 +28,7 @@ class Matrix3{
 		std::vector <std::vector<int>> data;  
 		
 	
-} 
+}; 
 
 // Constructor that accepts 9 values and adds it to the vector
 
