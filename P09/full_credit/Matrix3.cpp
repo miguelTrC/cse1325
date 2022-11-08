@@ -23,7 +23,7 @@ class Matrix3{
 
 
 /*
-functions: 
+functions:  
 
 get(int x, int y){
 	returns the int at specified index coordinates. 
