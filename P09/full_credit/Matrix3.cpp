@@ -26,19 +26,18 @@ class Matrix3{
 		get(int x, int y){
 			try{
 				if(x || y < 0){
-					throw std::runtime_error;
+					throw std::runtime_error("Invalid matrix coordinates");
 				}
 				if(x || y > 2){
-					throw std::runtime_error;
+					throw std::runtime_error("Invalid matrix coordinates");
 				}
 				
 				std::cout << data[x][y] << std::endl; 
 				
-				catch(std::runtime_error){
-					std::cout << "Invalid matrix coordinates" << std::endl;
-				}
-				
 			}
+			catch(std::runtime_error& e){
+				std::cout << e.what() << std::endl;
+				}
 		}
 				
 				
