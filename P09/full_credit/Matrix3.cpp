@@ -23,7 +23,7 @@ class Matrix3{
 					std::cout << "working" << std::endl; 
 				}
 		
-		get(int x, int y){
+		int get(int x, int y){
 			try{
 				if(x || y < 0){
 					throw std::runtime_error("Invalid matrix coordinates");
