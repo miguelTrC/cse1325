@@ -2,17 +2,6 @@
 Creating a 3x3 matrix and with input, output, and addition operators
 named Data
 
-
-idea: 
-Make a 2d int array to store the parameters in, and then push the array 
-into the vector
-
-
-(m00), data(m01), data(m02)},
-{(m10), data(m11), data(m12)}, 
-{data(m20), data(m21), data(m22)
-
-
 */
 
 //mxy parameters where x = row, y = colum, 3x3 array
@@ -29,9 +18,7 @@ class Matrix3{
 				data{ {(m00), (m01), (m02)},
 					  {(m10), (m11), (m12)}, 
 					  {(m20), (m21), (m22)} 
-					  }
-				{
-					std::vector <int> temp;
+					}{
 					
 					std::cout << "working" << std::endl; 
 				}
