@@ -52,4 +52,13 @@ get(int x, int y){
 	throw std::runtime_error exeption
 }
 
+
+Operations: 
+
+should be a loop where it gets data[x][y] + data[xx][yy]
+something like that
+
+
+
+
 */
