@@ -1,10 +1,5 @@
-/*
-Creating a 3x3 matrix and with input, output, and addition operators
-named Data
 
-*/
-
-//mxy parameters where x = row, y = colum, 3x3 array
+//#define "Matrix3.h"
 
 #include <iostream> 
 #include <vector>
@@ -31,15 +26,26 @@ class Matrix3{
 				if(x || y > 2){
 					throw std::runtime_error("Invalid matrix coordinates");
 				}
-				
-				std::cout << data[x][y] << std::endl; 
+				 
+				return data[x][y];
 				
 			}
 			catch(std::runtime_error& e){
 				std::cout << e.what() << std::endl;
 				}
 		}
-				
+		
+		std::ostream& operator<<(std::ostream&){
+			for(int row = 0; row < data.size(); row++){
+				for(int colum = 0; colum < data[row].size(); colum++){
+					std::cout << data[row][colum] << " ";
+				}
+				std::cout << std::endl;
+			}
+			std::cout << std::endl;
+		}
+		
+		
 				
 		
 		
@@ -50,26 +56,3 @@ class Matrix3{
 	
 }; 
 
-// Constructor that accepts 9 values and adds it to the vector
-
-
-/*
-functions:  
-
-get(int x, int y){
-	returns the int at specified index coordinates. 
-	if x or y are less than 0 or greater than 2, 
-	
-	throw std::runtime_error exeption
-}
-
-
-Operations: 
-
-should be a loop where it gets data[x][y] + data[xx][yy]
-something like that
-
-
-
-
-*/
