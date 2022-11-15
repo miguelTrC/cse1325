@@ -14,10 +14,16 @@ public class Container{
 		this.maxScoops = maxScoops; 
 		}
 	
-	public Container(BufferedReader br) throws IOException{
+	public Container(BufferedReader br)throws IOException{
 		this.name = br.readLine();
 		this.description = br.readLine(); 
 		this.maxScoops = Integer.parseInt(br.readLine());
+	}
+	
+	public void save(BufferedWriter bw)throws IOException{
+		bw.write(name + '\n');
+		bw.write(description + '\n');
+		bw.write("" + maxScoops + '\n');
 	}
 	
 	public String name() {return name;}
