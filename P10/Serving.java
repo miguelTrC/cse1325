@@ -18,7 +18,7 @@ public class Serving{
 		this.toppings = new ArrayList<>(); 
 	}
 	
-	public Serving(BufferedReader br)throw IOException{
+	public Serving(BufferedReader br)throws IOException{
 		this.container = new Container(br); 
 		this.scoops = new ArrayList<>(); 
 		this.toppings = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Serving{
 		while(numToppings-- > 0) toppings.add(new MixIn(br));
 	}
 	
-	public void save(BufferedWriter bw)throw IOException{
+	public void save(BufferedWriter bw)throws IOException{
 		container.save(bw);
 		bw.write("" + scoops.size() + '\n');
 		bw.write("" + toppings.size() + '\n');
