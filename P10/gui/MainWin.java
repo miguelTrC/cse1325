@@ -83,14 +83,65 @@ public class MainWin extends JFrame{
         menubar.add(help);
 		
 		}
-		
+	//p10 
+	 protected void onCreateContainerClick(){
+          try {             
+          	emporium.addContainer(new Container(
+          		JOptionPane.showInputDialog(this, "Name?", "Create Container",
+          	    JOptionPane.QUESTION_MESSAGE), 
+          	    JOptionPane.showInputDialog(this, "Description?", "Create Container", 			        				JOptionPane.QUESTION_MESSAGE), 
+          	    Integer.parseInt(JOptionPane.showInputDialog(this, "Price?", 
+          	    "Create Container",      	
+          	    JOptionPane.QUESTION_MESSAGE)), 
+          	    Integer.parseInt(JOptionPane.showInputDialog(this, "Cost?", 
+          	    "Create Container",            
+          	    JOptionPane.QUESTION_MESSAGE))             
+          	    	));
+          	    	setDirty(true);
+          	    	view(Screen.CONTAINERS);
+          	    } catch(Exception e) {
+          	    System.err.println("onCreateContainer exception: " + e);
+          }     
+      }	
 
-		/*
+	protected void onCreateScoopClick(){
+		try {             
+		      	
+		      	    	setDirty(true);
+		      	    	
+		      	    } catch(Exception e) {
+		      	    System.err.println(" exception: " + e);
+		      }     
+		  }	
+
+			
 		
-		// BaseLine Code given by prof rice, Using for additional refrence
+	
+	protected void onCreateServingClick(){
+		try {             
+		      	
+		      	    	setDirty(true);
+		      	    	
+		      	    } catch(Exception e) {
+		      	    System.err.println(" exception: " + e);
+		      }     
+		  }	
+			
 		
+	
+	protected void onCreateOrderClick(){
+		try {             
+		      	
+		      	    	setDirty(true);
+		      	    	
+		      	    } catch(Exception e) {
+		      	    System.err.println(" exception: " + e);
+		      }     
+		  }	
 		
-       
-    */
+	}
+	
+	
+	
 
 }
