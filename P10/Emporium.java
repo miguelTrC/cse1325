@@ -1,6 +1,9 @@
 package emporium; 
 
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
 
 import product.MixIn;
 import product.MixInAmount;
@@ -8,6 +11,8 @@ import product.MixInFlavor;
 import product.IceCreamFlavor;
 import product.Item;
 import product.Scoop;
+
+
 
 public class Emporium {
 
@@ -56,7 +61,7 @@ public class Emporium {
 		int size = Integer.parseInt(br.readLine());
 		while(size-- >0) mixInFlavors.add(new MixInFlavor(br));
 		
-		size = Interger.parseInt(br.readLine());
+		size = Integer.parseInt(br.readLine());
 		while(size-- >0) iceCreamFlavors.add(new IceCreamFlavor(br));
 		
 		size = Integer.parseInt(br.readLine());
