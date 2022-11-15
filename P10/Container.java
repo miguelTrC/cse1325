@@ -20,9 +20,9 @@ public class Container{
 		this.maxScoops = Integer.parseInt(br.readLine());
 	}
 	
-	public String name() {return name};
-	public String description() {return description};
-	public int maxScoops() {return maxScoops};
+	public String name() {return name;}
+	public String description() {return description;}
+	public int maxScoops() {return maxScoops;}
 	
 	public String toString(){
 		return (name + ""); 
