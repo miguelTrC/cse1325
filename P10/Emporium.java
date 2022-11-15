@@ -14,6 +14,7 @@ public class Emporium {
 	private ArrayList<MixInFlavor> mixInFlavors = new ArrayList<>(); 
 	private ArrayList<IceCreamFlavor> iceCreamFlavors = new ArrayList<>(); 
 	private ArrayList<Scoop> scoops = new ArrayList<>(); 
+	private ArrayList<Container> containers = new ArrayList<>();
 	
 	public void addMixInFlavor(MixInFlavor flavor){
 		mixInFlavors.add(flavor);
@@ -25,6 +26,10 @@ public class Emporium {
 	
 	public void addScoop(Scoop scoop){
 		scoops.add(scoop);
+	}
+	
+	public void addContainer(Container container){
+		containers.add(container);
 	}
 	
 	
@@ -41,6 +46,20 @@ public class Emporium {
 	public Object[] scoops(){
 		 return this.scoops.toArray(); 
 	}
+	
+	public Object[] containers(){
+		return this.containers.toArray();
+	}
+	
+	
+	public Emporium(BufferedReader br)throws IOException{
+		int size = Integer.parseInt(br.readLine());
+		while(size-- >0) mixInFlavors.add(new MixInFlavor(br));
+		
+		size = 
+	}
+	
+	
 }
 
 
