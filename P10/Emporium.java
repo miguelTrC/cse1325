@@ -56,7 +56,30 @@ public class Emporium {
 		int size = Integer.parseInt(br.readLine());
 		while(size-- >0) mixInFlavors.add(new MixInFlavor(br));
 		
-		size = 
+		size = Interger.parseInt(br.readLine());
+		while(size-- >0) iceCreamFlavors.add(new IceCreamFlavor(br));
+		
+		size = Integer.parseInt(br.readLine());
+		while(size-- >0) scoops.add(new Scoop(br));
+		
+		size = Integer.parseInt(br.readLine());
+		while(size-- >0) containers.add(new Container(br));
+	}
+	
+	
+	public void save(BufferedWriter bw)throws IOException{
+		bw.write("" + mixInFlavors.size() + '\n');
+		for(MixInFlavor mif : mixInFlavors) mif.save(bw);
+		
+		bw.write("" + iceCreamFlavors.size() + '\n');
+		for(IceCreamFlavors icf : iceCreamFlavors) icf.save(bw);
+		
+		bw.write("" + scoops.size() + '\n');
+		for(Scoop s : scoops) s.save(bw);
+		
+		bw.write("" + containers.size() + '\n');
+		for(Container c : containers) c.save(bw);
+		
 	}
 	
 	
