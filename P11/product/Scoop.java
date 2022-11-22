@@ -15,6 +15,11 @@ public class Scoop{
 		mixins.add(mixin);
 	}
 	
+	public double price(){
+		return (flavor.price + mixins.price(flavor));
+		
+	}
+	
 	
 	// ToString method from Professor Rice
 	@Override 
