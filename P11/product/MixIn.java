@@ -9,7 +9,7 @@ public class MixIn{
 		this.amount = amount; 
 	}
 	
-	public Double price(int amountOfFlavors){
+	public double price(int amountOfFlavors){
 		switch(amount) {
 			case Light:
 				return (amountOfFlavors * 0.8);
