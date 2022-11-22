@@ -22,5 +22,9 @@ public class Order{
 		servings.add(serving);
 	}
 	
+	public double price(){
+		return (servings.price() + toppings); 
+	}
+	
 	
 }
