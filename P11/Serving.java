@@ -41,6 +41,10 @@ public class Serving{
 		toppings.add(topping);
 	}
 	
+	public double price(){
+		return (scoops.price() + toppings.price(toppings.amount));
+	}
+	
 	public String toString(){
 		StringBuilder result = new StringBuilder(container.toString());
 		if(scoops.size() > 0){
