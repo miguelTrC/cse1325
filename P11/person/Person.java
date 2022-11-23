@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
+
 public class Person {
 	protected String name;
     protected String phone;
@@ -24,6 +25,12 @@ public class Person {
         bw.write(name + '\n');
         bw.write(phone + '\n');
     }
+    
+    public class hashCode(){
+    	
+    }
+    
+    
 
     public String name() {return name;}
     public String phone() {return phone;}
