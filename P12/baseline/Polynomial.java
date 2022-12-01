@@ -31,9 +31,17 @@ public class Polynomial implements Thread {
         for(Term term : terms) y += term.eval(x);
         return y;
     }
+
     public void solve(double min, double max, int nthreads, double slices, double precision) {
+    	@Override 
+    	public void run(){
+    	Thread threadObject = new Thread(roots);
+    	threadObject.start(); 
+    	
         roots.clear();
         solveRecursive(min, max, 1, slices, precision, 0);
+        }
+        
     }
     public Object[] roots() {
         return roots.toArray();
