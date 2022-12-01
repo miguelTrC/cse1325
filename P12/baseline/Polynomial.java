@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-public class Polynomial {
+public class Polynomial implements Thread {
     public static boolean log = false;   // Set true to print log messages
     public static void LOG(String s) {
         if(log) System.err.println("==> " + s);
